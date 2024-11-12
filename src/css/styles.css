@@ -11,34 +11,34 @@ img {
 }
 
 body {
-  background-color:#24292e;
-  font-family: "Kumbh Sans", sans-serif;  
-  text-align: center;    
+  background-color: var(--background);
+  font-family: var(--font);
+  text-align: center;
   padding-bottom: 100px;
 }
 
 main {
-  display: flex;  
+  display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 50px 0 0;      
+  padding: 50px 0 0;
 }
 
-.devicon-github-original{
+.devicon-github-original {
   font-size: 60px;
   margin-bottom: 30px;
-  color: #FFFFFF;
+  color: var(--white);
 }
 
-.section{
+.section {
   padding: 70px 0;
 }
 
 .container {
-  width: 60%; /* se for uma tela menor que 980px vai se adaptar a 70% */
-  max-width: 960px; /* quando chegar em 980px para de aumentar */
+  width: 60%;
+  max-width: 960px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 25px 50px -12px;
-  background-color: #fff;
+  background-color: var(--white);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,7 +66,7 @@ main {
   margin: 0 auto;
   padding: 10px;
   border-radius: 7px;
-  border: 1px solid grey;
+  border: 1px solid var(--secondary-strong);
 }
 
 .container header #btn-search {
@@ -74,122 +74,143 @@ main {
   font-size: 17px;
   margin: 20px auto 0;
   padding: 10px;
-  border-radius: 7px;  
+  border-radius: 7px;
   cursor: pointer;
-  border: 1px solid grey;
+  border: 1px solid var(--secondary-light);
 }
 
 .container header #btn-search:hover {
-  background-color: hotpink;
-  color: #ffffff;
-  border-color: #ffffff;
+  background-color: var(--primary);
+  color: var(--white);
+  border-color: var(--white);
 }
 
-.container .profile-data{
+.container .profile-data {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px;  
+  padding: 40px;
 }
 
 .container .profile-data .info {
-  display: flex;  
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+  padding: 50px 0 50px 0;
+  border-top: 1px solid var(--secondary-light);
+  border-bottom: 1px solid var(--secondary-light);
 }
 
-.container .profile-data .info .data{
+.container .profile-data .info .data {
   padding: 40px;
   width: 50%;
 }
 
-.container .profile-data .info img{
-  width: 50%;
-  border-radius: 50%;
-  border: 10px solid hotpink;
+.container .profile-data .info .follows {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 70px;
 }
 
-.container .profile-data .info h1{
+.container .profile-data .info .follows .numbers {
+  margin-top: 50px;
+  color: var(--white);
+  padding: 15px 0 15px 0;
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+.container .profile-data .info .follows .numbers.followers {
+  background-color: var(--primary);
+}
+
+.container .profile-data .info .follows .numbers.following {
+  background-color: var(--bg-following)
+}
+
+.container .profile-data .info img {
+  width: 50%;
+  border-radius: 50%;
+  border: 10px solid var(--primary);
+}
+
+.container .profile-data .info h1 {
   font-size: 20px;
   margin-bottom: 20px;
   font-weight: 700;
 }
 
-.container .profile-data .info p{
-  font-size: 15px;  
+.container .profile-data .info p {
+  font-size: 15px;
   font-weight: 400;
   line-height: 23px;
 }
 
-/* REPOSITORIES */
+.container .profile-data .repositories{
+  border-bottom: 1px solid var(--secondary-light);
+}
 
-.container .profile-data .repositories h2{
+/* REPOSITORIES */
+.container .profile-data .repositories h2 {
   margin-bottom: 30px;
   text-align: center;
 }
 
-.container .profile-data .repositories ul{
+.container .profile-data .repositories ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.container .profile-data .repositories ul li a{
+.container .profile-data .repositories ul li a {
   padding: 20px;
-  border: 1px solid grey;  
+  border: 1px solid var(--secondary-strong);
   margin: 20px;
   display: block;
   border-radius: 7px;
   transition: 0.3s ease-in-out;
+  justify-items: start;
 }
 
-.container .profile-data .repositories ul li a:hover{
-  background-color:hotpink;
-  color: #fff
+.container .profile-data .repositories ul li a:hover {
+  background-color: var(--primary);
+  color: var(--white);
 }
 
-.container .profile-data.hide{
+.container .profile-data .repositories ul li a h4 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.container .profile-data .repositories ul li a .icons {
+  margin-top: 15px;
+  color: var(--white);
+}
+
+.container .profile-data .repositories ul li a .icons i {
+  background-color: var(--bg-icons);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* EVENTS */
+.container .profile-data .events h2{
+  margin-bottom: 30px;
+}
+
+.container .profile-data .events ul .item-event {
+  gap: 10px;
+  display: flex;
+  justify-content: start;
+  margin-bottom: 10px;
+}
+
+.container .profile-data .events ul .item-event .repo-name {
+  font-weight: bold;
+}
+
+.container .profile-data.hide {
   display: none;
-}
-
-@media (max-width: 1280px) {
-  .container {
-    flex-direction: column;
-    width: 90%;
-    border-radius: 20px;
-  }
-
-  .container header {
-    width: 100%;
-  }
-
-  .container header h1 {
-    font-size: 24px;
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .container header #input-search,
-  .container header #btn-search
-  {
-    width: 100%;
-  }
-}
-
-@media (max-width: 425px) {
-  main {
-    padding: 15% 0;    
-  }
-
-  .container .profile-data .info img{
-    margin-bottom: 20px;
-  }
-
-  .container .profile-data .info img,
-  .container .profile-data .info .data
-  {
-    width: 100%;
-    padding: 0;
-  }
 }

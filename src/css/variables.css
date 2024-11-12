@@ -1,0 +1,11 @@
+:root {
+    --font: "Kumbh Sans", sans-serif;
+    --background: #24292e;
+    --white: #fff;
+    --black: #000;
+    --primary: hotpink;
+    --secondary-light: #ccc;
+    --secondary-strong: grey;
+    --bg-icons: #6a5acd;
+    --bg-following: #800080;
+}
