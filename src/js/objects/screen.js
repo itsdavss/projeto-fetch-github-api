@@ -45,14 +45,14 @@ const screen = {
         
         let eventsItems = ''
 
-        user.events.forEach(function (even) {
+        user.events.forEach(function (event) {
             eventsItems += `<li class="item-event">
-                                <span class="repo-name">${even.repo.name}:</span>
+                                <span class="repo-name">${event.repo.name}:</span>
                             `
 
-            if (even.type === "PushEvent") {
+            if (event.type === "PushEvent") {
                 eventsItems += `
-                                    <span>${even.payload.commits[0].message}</span>
+                                    <span>${event.payload.commits[0].message}</span>
                                 </li>`
             } else {
                 eventsItems += `
