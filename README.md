@@ -2,6 +2,8 @@
 
 Este projeto é um site que permite buscar usuários utilizando a API do GitHub.
 
+## [Vizualize o projeto clicando aqui](https://itsdavss.github.io/projeto-fetch-github-api/) ##
+
 ## Glossário
 
 - [Visão geral](#visão-geral)
