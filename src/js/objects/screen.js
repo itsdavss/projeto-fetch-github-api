@@ -28,10 +28,10 @@ const screen = {
                                                                     <a href="${repo.html_url}" target="_blank">
                                                                         <h4>${repo.name}</h4>
                                                                         <div class="icons">
-                                                                            <i>🍴 ${repo.forks_count}</i>
-                                                                            <i>⭐ ${repo.stargazers_count}</i>
-                                                                            <i>👀 ${repo.watchers_count}</i>
-                                                                            <i>👩‍💻 ${repo.language}</i>
+                                                                            <i>🍴 ${repo.forks_count ?? 'Sem forks'}</i>
+                                                                            <i>⭐ ${repo.stargazers_count ?? 'Sem estrelas'}</i>
+                                                                            <i>👀 ${repo.watchers_count ?? 'Sem watchers'}</i>
+                                                                            <i>👩‍💻 ${repo.language ?? 'Sem linguagem'}</i>
                                                                         </div>
                                                                     </a>
                                                                 </li>`);
