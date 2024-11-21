@@ -1,49 +1,49 @@
-# Projeto Busca de usuários do Github
+# GitHub Users Search Project
 
-Este projeto é um site que permite buscar usuários utilizando a API do GitHub.
+This project is a website that allows users to search for GitHub users using the GitHub API.
 
-## [Vizualize o projeto clicando aqui](https://itsdavss.github.io/projeto-fetch-github-api/) ##
+## [View the project here](https://itsdavss.github.io/projeto-fetch-github-api/) ##
 
-## Glossário
+## Glossary
 
-- [Visão geral](#visão-geral)
-  - [Sobre](#sobre)
+- [Overview](#overview)
+  - [About](#about)
   - [Screenshots](#screenshots)
-- [Meu processo](#meu-processo)
-  - [Dificuldades e aprendizados](#dificuldades-e-aprendizados)
-  - [Desenvolvido com](#desenvolvido-com)
+- [My process](#my-process)
+  - [Challenges and learnings](#challenges-and-learnings)
+  - [Developed with](#developed-with)
 - [Autor](#autor)
 
-## Visão geral
+## Overview
 
-### Sobre
+### About
 
-O objetivo deste site é exibir informações detalhadas sobre o usuário do GitHub solicitado, incluindo seu nome, biografia, número de seguidores, quantidade de pessoas que ele segue, lista de repositórios e suas atividades mais recentes na plataforma.
+The goal of this website is to display detailed information about the requested GitHub user, including their name, bio, number of followers, the number of people they follow, a list of their repositories, and their most recent activities on the platform.
 
 ### Screenshots
 
-#### Exemplo do site
+#### Example of the website
 <img src="./screenshots/animation.gif" alt="gif do site">
 
-## Meu processo
+## My process
 
-Este projeto foi desenvolvido como parte do curso DevQuest. Inicialmente, acompanhamos o professor na criação da estrutura principal, e depois nos foi solicitado que adicionássemos novas funcionalidades, como:
+This project was developed as part of the DevQuest course. Initially, we followed the instructor in creating the main structure, and then we were asked to add new features, such as:
 
-- Exibir o número de seguidores e a quantidade de pessoas que o usuário segue
-- Mostrar informações sobre os eventos mais recentes do usuário no GitHub
-- Exibir a quantidade de forks, estrelas, watchers e a linguagem de programação de cada repositório
+- Displaying the number of followers and the number of people the user follows
+- Showing information about the user's most recent events on GitHub
+- Displaying the number of forks, stars, watchers, and the programming language of each repository
 
-Embora não tenha sido solicitado, decidi fazer algumas alterações na responsividade do projeto. Percebi que alguns elementos poderiam ser aprimorados para oferecer uma experiência mais agradável em dispositivos diferentes, então ajustei o layout para torná-lo mais responsivo e visualmente consistente.
+Although it wasn't required, I decided to make some changes to the responsiveness of the project. I realized that some elements could be improved to offer a better experience on different devices, so I adjusted the layout to make it more responsive and visually consistent.
 
-<img src="./screenshots/mobile-animation.gif" alt="gif do site na versão mobile">
+<img src="./screenshots/mobile-animation.gif" alt="website gif on mobile version">
 
-### Dificuldades e aprendizados
+### Challenges and learnings
 
-Sem dúvidas, algo que eu gostei bastante de aprender foi a parte da refatoração do código. Inicialmente nós fizemos tudo em apenas um arquivo de script e depois refatoramos de uma forma bem mais organizada e legível, designando tarefas específicas para cada arquivo, deixando assim o projeto bem mais facil de dar manutenção, fazer alterações e adicionar novas funcionalidades.
+Without a doubt, something I really enjoyed learning was the code refactoring part. Initially, we did everything in just one script file, and then we refactored it into a much more organized and readable structure, assigning specific tasks to each file. This made the project much easier to maintain, modify, and add new features.
 
-<img src="./screenshots/folder_organization.png" alt="screenshot das pastas do projeto">
+<img src="./screenshots/folder_organization.png" alt="screenshot of the project folders">
 
-### Desenvolvido com
+### Developed with
 
 - HTML
 - CSS
@@ -54,5 +54,5 @@ Sem dúvidas, algo que eu gostei bastante de aprender foi a parte da refatoraç�
 ## Autor
 
 - GitHub - [itsdavss](https://github.com/itsdavss)
-- Meu portfólio - [Davi Oliveira](https://itsdavss.github.io/portfolio-davi/)
+- My portfolio - [Davi Oliveira](https://itsdavss.github.io/portfolio-davi/)
 - LinkedIn - [Davi Oliveira dos Santos](https://www.linkedin.com/in/davi-oliveira-dos-santos/)

@@ -2,20 +2,20 @@ const screen = {
     userProfile: document.querySelector('.profile-data'),
     renderUser(user) {
         this.userProfile.innerHTML = `<div class="info">
-                                        <img src="${user.avatarUrl}" alt="Foto do perfil do usuário">
+                                        <img src="${user.avatarUrl}" alt="User's profile photo">
                                         <div class="data">     
-                                            <h1>${user.name ?? 'Não possui nome cadastrado 😢'}</h1>
-                                            <p>${user.bio ?? 'Não possui bio cadastrada 😢'}</p>
+                                            <h1>${user.name ?? 'No registered name found 😢'}</h1>
+                                            <p>${user.bio ?? 'No registered bio found 😢'}</p>
                                         </div>
                                         <div class="follows">     
                                             <div>
-                                                <p>👥 Seguidores</p>
+                                                <p>👥 Followers</p>
                                                 <div class="numbers followers">
                                                     ${user.followers}
                                                 </div>
                                             </div>
                                             <div>
-                                                <p>👥 Seguindo</p>
+                                                <p>👥 Following</p>
                                                 <div class="numbers following">
                                                     ${user.following}
                                                 </div>
@@ -28,17 +28,17 @@ const screen = {
                                                                     <a href="${repo.html_url}" target="_blank">
                                                                         <h4>${repo.name}</h4>
                                                                         <div class="icons">
-                                                                            <i>🍴 ${repo.forks_count ?? 'Sem forks'}</i>
-                                                                            <i>⭐ ${repo.stargazers_count ?? 'Sem estrelas'}</i>
-                                                                            <i>👀 ${repo.watchers_count ?? 'Sem watchers'}</i>
-                                                                            <i>👩‍💻 ${repo.language ?? 'Sem linguagem'}</i>
+                                                                            <i>🍴 ${repo.forks_count ?? 'No forks'}</i>
+                                                                            <i>⭐ ${repo.stargazers_count ?? 'No stargazers'}</i>
+                                                                            <i>👀 ${repo.watchers_count ?? 'No watchers'}</i>
+                                                                            <i>👩‍💻 ${repo.language ?? 'No language'}</i>
                                                                         </div>
                                                                     </a>
                                                                 </li>`);
 
         if (user.repositories.length > 0) {
             this.userProfile.innerHTML += `<div class="repositories section">
-                                                <h2>Repositórios</h2>
+                                                <h2>Repositories</h2>
                                                 <ul>${repositoriesItems}</ul>
                                            </div>`
         }
@@ -56,20 +56,20 @@ const screen = {
                                 </li>`
             } else {
                 eventsItems += `
-                                    <span>Sem mensagem de commit</span>
+                                    <span>No commit message</span>
                                 </li>`
             }
         });
 
         if (user.events.length > 0) {
             this.userProfile.innerHTML += `<div class="events section">
-                                                <h2>Eventos</h2>
+                                                <h2>Events</h2>
                                                 <ul>${eventsItems}</ul>
                                            </div>`
         }
     },
     renderNotFound() {
-        this.userProfile.innerHTML = "<h3>Usuário não encontrado</h3>"
+        this.userProfile.innerHTML = "<h3>User not found</h3>"
     }
 }
 
